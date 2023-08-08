@@ -1,0 +1,43 @@
+// .eslintrc.json
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:prettier/recommended"
+  ],
+
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "parser": "flow",
+        "semi": true,
+        "useTabs": true,
+        "tabWidth": 2,
+        "printWidth": 80,
+        "bracketSpacing": true,
+        "arrowParens": "avoid"
+      },
+      {
+        "usePrettierrc": false,
+        "fileInfoOptions": {
+          "withNodeModules": true
+        }
+      }
+    ]
+  }
+}
